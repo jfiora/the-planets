@@ -1,10 +1,10 @@
 import './PlanetStatItem.css';
 
-const PlanetStatItem = ({ name, rotationTime }) => {
+const PlanetStatItem = ({ statType, statValue }) => {
   return (
     <div className="PlanetStatItem">
-      <h2>{name}</h2>
-      <p>{rotationTime}</p>
+      <h2>{statType}</h2>
+      <p>{statValue}</p>
     </div>
   );
 };

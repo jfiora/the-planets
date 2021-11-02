@@ -1,13 +1,21 @@
 import PlanetStatItems from './PlanetStatsItem/PlanetStatItem';
+import './PlanetStats.css';
 
-const PlanetStats = () => {
+const PlanetStats = ({ stats }) => {
+  console.log(stats);
   return (
-    <>
-      <PlanetStatItems name="rotation time" rotationTime="104" />
-      <PlanetStatItems name="123" rotationTime="105" />
-      <PlanetStatItems name="456" rotationTime="106" />
-      <PlanetStatItems name="789" rotationTime="107" />
-    </>
+    <div className="PlanetStat">
+      <PlanetStatItems
+        statType="rotation time"
+        statValue={stats.rotationTime}
+      />
+      <PlanetStatItems
+        statType="revolution time"
+        statValue={stats.revolutionTime}
+      />
+      <PlanetStatItems statType="radius" statValue={stats.radius} />
+      <PlanetStatItems statType="average temp." statValue={stats.averageTemp} />
+    </div>
   );
 };
 
