@@ -2,7 +2,6 @@ import PlanetStatItems from './PlanetStatsItem/PlanetStatItem';
 import './PlanetStats.css';
 
 const PlanetStats = ({ stats }) => {
-  console.log(stats);
   return (
     <div className="PlanetStat">
       <PlanetStatItems
