@@ -1,0 +1,25 @@
+:root {
+  /* COLORS */
+  --blue-grey: #38384f;
+  --blue-dark: #070724;
+  --blue-light: #2d68f0;
+  --blue-lighter: #419ebb;
+  --cyan: #1ec2a4;
+  --grey: #838391;
+  --yellow: #eda249;
+  --purple: #6f2ed6;
+  --red-light: #d14c32;
+  --red: #d83a34;
+  --orange: #cd5120;
+
+  /* FONT FAMILY */
+  --ff-primary: 'Spartan', sans-serif;
+  --ff-secondary: 'Antonio', sans-serif;
+
+  /* FONT SIZE */
+  --fs-xs: 0.6875rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 2.5rem;
+  --fs-xl: 5rem;
+}
