@@ -1,8 +1,12 @@
-export default function InfoControllerButton({number, title}){
+import './infoControllerButton.css'
+
+const InfoControllerButton = ({number, title}) => {
     return (
-        <button>
+        <button className="infoControllerButton">
             <span>{number}</span>
             <p>{title}</p>
         </button>
     );
 }
+
+export default InfoControllerButton;
