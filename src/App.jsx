@@ -1,21 +1,9 @@
-import { Switch, Link, Route, Redirect } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import { routes } from './routes';
 
 function App() {
   return (
     <div>
-      <nav>
-        <li>
-          <Link to={routes.mercury}>mercury</Link>
-          <Link to={routes.venus}>venus</Link>
-          <Link to={routes.earth}>earth</Link>
-          <Link to={routes.mars}>mars</Link>
-          <Link to={routes.jupiter}>jupiter</Link>
-          <Link to={routes.saturn}>saturn</Link>
-          <Link to={routes.uranus}>uranus</Link>
-          <Link to={routes.neptune}>neptune</Link>
-        </li>
-      </nav>
       <Switch>
         <Route exact path={routes.home}>
           <Redirect to={routes.mercury} />
