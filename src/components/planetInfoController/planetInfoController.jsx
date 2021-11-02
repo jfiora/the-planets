@@ -1,4 +1,4 @@
-import InfoControllerButton from "./infoControllerButton/infoControllerButton";
+import InfoControllerButton from "./infoControllerButton/InfoControllerButton";
 
 export default function PlanetInfoController(){
     const titles = ['OVERVIEW', 'INTERNAL STRUCTURE', 'SURFACE GEOLOGY'];
@@ -6,7 +6,7 @@ export default function PlanetInfoController(){
     return (
         <div>
             {titles.map((title, index) => (
-                <InfoControllerButton number=""/>
+                <InfoControllerButton key={index} number={`0${index+1}`} title={title}/>
             ))}
         </div>
     );
