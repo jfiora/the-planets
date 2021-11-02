@@ -2,7 +2,7 @@ import './PlanetBio.css';
 
 const PlanetBio = ({bio}) => {
     return (
-        <p className="planetBio">{bio}</p>
+        <p className="PlanetBio">{bio}</p>
     );
 }
 
