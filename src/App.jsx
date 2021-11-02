@@ -1,5 +1,14 @@
+import PlanetStats from './components/Planet/PlanetStats/PlanetStats';
+
 function App() {
-  return <div>The Solar System</div>;
+  return (
+    <div>
+      <div>The Solar System</div>
+      <div>
+        <PlanetStats />
+      </div>
+    </div>
+  );
 }
 
 export default App;
