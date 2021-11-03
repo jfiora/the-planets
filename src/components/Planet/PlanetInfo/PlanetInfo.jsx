@@ -23,7 +23,7 @@ const PlanetInfo = ({planet}) => {
 
     useEffect(() => {
         setPlanetInfo();
-    }, [currentPlanetInfo]);
+    }, [currentPlanetInfo, planet]);
 
     return (
         <div>
