@@ -14,8 +14,8 @@ const PlanetInfoController = ({
         <InfoControllerButton
           key={title}
           information={{ number: `0${index + 1}`, title, planetColor }}
-          setCurrentInfoPlanet={sendDataToParent}
-          isSelected={currentPlanetInfo == `0${index + 1}`}
+          setCurrentInfoPlanet={() => sendDataToParent(title)}
+          isSelected={currentPlanetInfo == title}
         />
       ))}
     </div>
