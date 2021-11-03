@@ -21,14 +21,14 @@ export default function NavigationItems() {
         className="navmenu"
         hidden={!isOpen}
         onClick={() => setIsOpen(!isOpen)}>
-        <NavigationItem path={routes.mercury} name="mercury" color='lighter-blue'/>
+        <NavigationItem path={routes.mercury} name="mercury" color='light-blue'/>
         <NavigationItem path={routes.venus} name="venus" color='yellow'/>
         <NavigationItem path={routes.earth} name="earth" color='purple'/>
         <NavigationItem path={routes.mars} name="mars" color='light-red'/>
         <NavigationItem path={routes.jupiter} name="jupiter" color='red'/>
         <NavigationItem path={routes.saturn} name="saturn" color='orange'/>
         <NavigationItem path={routes.uranus} name="uranus" color='cyan'/>
-        <NavigationItem path={routes.neptune} name="neptune" color='ligth-blue'/>
+        <NavigationItem path={routes.neptune} name="neptune" color='blue'/>
       </nav>
     </div>
   );
