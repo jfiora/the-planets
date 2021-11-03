@@ -1,8 +1,14 @@
+import './NotFoundPage.css';
+
 const NotFoundPage = () => {
   return (
-    <div>
-      <h2>404</h2>
-      <h3>Page not found</h3>
+    <div className="NotFoundPage">
+      <div>
+        <h2>
+          404 <br /> Page not found
+        </h2>
+        <img src="../../img/Rocket11.svg" alt="" />
+      </div>
     </div>
   );
 };

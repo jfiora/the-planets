@@ -1,0 +1,29 @@
+.NotFoundPage {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.NotFoundPage > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.NotFoundPage > div > * {
+  text-align: center;
+  font-size: var(--fs-lg);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(9, 9, 121, 1) 50%,
+    rgba(2, 0, 36, 1) 100%
+  );
+}
