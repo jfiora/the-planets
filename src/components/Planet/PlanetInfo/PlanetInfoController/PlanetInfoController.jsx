@@ -1,4 +1,4 @@
-import InfoControllerButton from './infoControllerButton/InfoControllerButton';
+import InfoControllerButton from './InfoControllerButton/InfoControllerButton';
 import './planetInfoController.css';
 
 const PlanetInfoController = ({
