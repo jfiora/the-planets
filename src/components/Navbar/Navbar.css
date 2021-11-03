@@ -1,0 +1,8 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* set this globally */
+  background-color: var(--blue-dark);
+}
