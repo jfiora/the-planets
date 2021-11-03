@@ -1,9 +1,12 @@
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { routes } from './routes';
 
+import Navbar from './components/Navbar/Navbar';
+
 function App() {
   return (
     <div>
+      <Navbar />
       <Switch>
         <Route exact path={routes.home}>
           <Redirect to={routes.mercury} />
