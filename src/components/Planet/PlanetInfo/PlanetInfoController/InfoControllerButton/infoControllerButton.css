@@ -1,10 +1,19 @@
-.infoControllerButton{
-    outline: none;
-    border: 1px solid rgba(216, 216, 216, 0.2);
-    text-transform: uppercase;
-    color: #fff;
-    letter-spacing: 2.6px;
-    line-height: 25px;
-    padding: 10px 20px;
-    font-size: 12px;
+.infoControllerButton {
+  outline: none;
+  border: 1px solid rgba(216, 216, 216, 0.2);
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2.6px;
+  line-height: 25px;
+  padding: 10px 20px;
+  font-size: 12px;
+  display: flex;
+}
+
+.infoControllerButton:hover {
+  background-color: rgba(216, 216, 216, 0.2);
+}
+
+.infoControllerButton span {
+  margin-right: 20px;
 }
