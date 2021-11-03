@@ -1,8 +1,11 @@
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { routes } from './routes';
 
-import Navbar from './components/Navbar/Navbar';
 import NotFoundPage from './components/NotFoundPage/NotFoundPage';
+import Navbar from './components/Navbar/Navbar';
+import Planet from './components/Planet/Planet';
+
+import data from './planets-info.json';
 
 function App() {
   return (
@@ -12,15 +15,33 @@ function App() {
         <Route exact path={routes.home}>
           <Redirect to={routes.mercury} />
         </Route>
-        <Route path={routes.mercury}>Mercury</Route>
-        <Route path={routes.venus}>Venus</Route>
-        <Route path={routes.earth}>Earth</Route>
-        <Route path={routes.mars}>Mars</Route>
-        <Route path={routes.jupiter}>Jupiter</Route>
-        <Route path={routes.saturn}>Saturn</Route>
-        <Route path={routes.uranus}>Uranus</Route>
-        <Route path={routes.neptune}>Neptune</Route>
-        <Route path="*"><NotFoundPage /></Route>
+        <Route path={routes.mercury}>
+          <Planet planet={data.planets[0]} />
+        </Route>
+        <Route path={routes.venus}>
+          <Planet planet={data.planets[1]} />
+        </Route>
+        <Route path={routes.earth}>
+          <Planet planet={data.planets[2]} />
+        </Route>
+        <Route path={routes.mars}>
+          <Planet planet={data.planets[3]} />
+        </Route>
+        <Route path={routes.jupiter}>
+          <Planet planet={data.planets[4]} />
+        </Route>
+        <Route path={routes.saturn}>
+          <Planet planet={data.planets[5]} />
+        </Route>
+        <Route path={routes.uranus}>
+          <Planet planet={data.planets[6]} />
+        </Route>
+        <Route path={routes.neptune}>
+          <Planet planet={data.planets[7]} />
+        </Route>
+        <Route path="*">
+          <NotFoundPage />
+        </Route>
       </Switch>
     </div>
   );
