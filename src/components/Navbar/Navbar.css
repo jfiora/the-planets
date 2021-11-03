@@ -1,7 +1,10 @@
 .Navbar {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 6rem;
+  padding: 0rem 8%;
 
   /* set this globally */
   background-color: var(--blue-dark);

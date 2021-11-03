@@ -1,0 +1,27 @@
+.NavigationItems .navmenu-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1.5rem;
+}
+
+.NavigationItems .navmenu-toggle .hamburguer-bar {
+  background-color: var(--grey);
+  width: 2rem;
+  height: 0.25rem;
+}
+
+.NavigationItems .navmenu {
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 6rem);
+
+  /* change this after page bg setup */
+  background-color: var(--blue-dark);
+}
+
+.NavigationItems .navmenu[hidden] {
+  display: none;
+}
