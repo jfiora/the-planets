@@ -2,6 +2,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import { routes } from './routes';
 
 import Navbar from './components/Navbar/Navbar';
+import NotFoundPage from './components/NotFoundPage/NotFoundPage';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <Route path={routes.saturn}>Saturn</Route>
         <Route path={routes.uranus}>Uranus</Route>
         <Route path={routes.neptune}>Neptune</Route>
-        <Route path="*">404</Route>
+        <Route path="*"><NotFoundPage /></Route>
       </Switch>
     </div>
   );
