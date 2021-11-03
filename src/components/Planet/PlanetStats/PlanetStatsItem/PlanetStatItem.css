@@ -16,7 +16,7 @@
 
 .PlanetStatItem > p {
   font-family: var(--ff-secondary);
-  font-size: 1.5rem;
+  font-size: var(--fs-lg);
   text-transform: uppercase;
   line-height: 100%;
 }
