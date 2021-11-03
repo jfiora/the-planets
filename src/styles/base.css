@@ -4,6 +4,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--blue-dark);
+  background-image: url('../img/internal/background-stars.svg');
 }
 
 code {
