@@ -17,7 +17,10 @@ export default function NavigationItems() {
         <div className="hamburguer-bar"></div>
         <div className="hamburguer-bar"></div>
       </div>
-      <nav className="navmenu" hidden={!isOpen}>
+      <nav
+        className="navmenu"
+        hidden={!isOpen}
+        onClick={() => setIsOpen(!isOpen)}>
         <NavigationItem path={routes.mercury} name="mercury" />
         <NavigationItem path={routes.venus} name="venus" />
         <NavigationItem path={routes.earth} name="earth" />

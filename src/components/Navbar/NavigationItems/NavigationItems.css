@@ -17,6 +17,7 @@
   left: 0;
   width: 100%;
   height: calc(100vh - 6rem);
+  padding: 1rem 8%;
 
   /* change this after page bg setup */
   background-color: var(--blue-dark);

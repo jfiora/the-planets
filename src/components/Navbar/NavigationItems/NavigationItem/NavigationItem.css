@@ -1,0 +1,50 @@
+.NavigationItem {
+  position: relative;
+  list-style: none;
+  padding: 1rem 0;
+}
+
+.NavigationItem::after {
+  content: '>';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1rem;
+  transform: translateY(-50%);
+
+  font-family: var(--ff-secondary);
+  color: var(--grey);
+}
+
+.NavigationItem:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.NavigationItem .navlink {
+  position: relative;
+  padding: 0 0 0 2.5rem;
+}
+
+.NavigationItem .navlink::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 1rem;
+  height: 1rem;
+  transform: translateY(-50%);
+  border-radius: 50px;
+
+  background-color: var(--yellow);
+}
+
+.NavigationItem .navlink,
+.NavigationItem .navlink:active,
+.NavigationItem .navlink:visited {
+  display: block;
+
+  font-family: var(--ff-primary);
+  font-size: var(--fs-base);
+  text-decoration: none;
+  color: #fff;
+}
