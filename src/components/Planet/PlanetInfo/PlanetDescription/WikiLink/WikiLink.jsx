@@ -1,5 +1,5 @@
 import './WikiLink.css';
-import img from '../../../../../img/internal/external-link.svg';
+import img from '../../../../../img/external-link.svg';
 
 const WikiLink = ({link}) => {
     return (
