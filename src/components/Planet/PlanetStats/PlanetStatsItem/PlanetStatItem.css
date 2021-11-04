@@ -4,19 +4,24 @@
   flex-basis: 20%;
   display: flex;
   flex-direction: column;
+  /*text color*/
+  color: var(--white);
 }
 
 .PlanetStatItem > h2 {
   font-weight: 700;
   opacity: 0.5;
   text-transform: uppercase;
+  /*stat type font size*/
   font-size: 11px;
   margin-bottom: 15px;
 }
 
 .PlanetStatItem > p {
+  /*stat value font family*/
   font-family: var(--ff-secondary);
-  font-size: var(--fs-lg);
+  /*stat value font size*/
+  font-size: 2rem;
   text-transform: uppercase;
   line-height: 100%;
 }
