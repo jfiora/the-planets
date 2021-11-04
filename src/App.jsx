@@ -1,45 +1,57 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import { Switch, Route, Redirect } from 'react-router-dom';
+import { routes } from './routes';
+
+import NotFoundPage from './components/NotFoundPage/NotFoundPage';
+import Navbar from './components/Navbar/Navbar';
+import Planet from './components/Planet/Planet';
+
+import mercury from './data/mercury';
+import venus from './data/venus';
+import earth from './data/earth';
+import mars from './data/mars';
+import jupiter from './data/jupiter';
+import saturn from './data/saturn';
+import uranus from './data/uranus';
+import neptune from './data/neptune';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
+    <div>
+      <Navbar />
+      <Switch>
+        <Route exact path={routes.home}>
+          <Redirect to={routes.mercury} />
+        </Route>
+        <Route path={routes.mercury}>
+          <Planet planet={mercury} />
+        </Route>
+        <Route path={routes.venus}>
+          <Planet planet={venus} />
+        </Route>
+        <Route path={routes.earth}>
+          <Planet planet={earth} />
+        </Route>
+        <Route path={routes.mars}>
+          <Planet planet={mars} />
+        </Route>
+        <Route path={routes.jupiter}>
+          <Planet planet={jupiter} />
+        </Route>
+        <Route path={routes.saturn}>
+          <Planet planet={saturn} />
+        </Route>
+        <Route path={routes.uranus}>
+          <Planet planet={uranus} />
+        </Route>
+        <Route path={routes.neptune}>
+          <Planet planet={neptune} />
+        </Route>
+        <Route path="*">
+          <NotFoundPage />
+        </Route>
+      </Switch>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
