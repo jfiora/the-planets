@@ -5,7 +5,14 @@ import NotFoundPage from './components/NotFoundPage/NotFoundPage';
 import Navbar from './components/Navbar/Navbar';
 import Planet from './components/Planet/Planet';
 
-import data from './planets-info.json';
+import mercury from './data/mercury';
+import venus from './data/venus';
+import earth from './data/earth';
+import mars from './data/mars';
+import jupiter from './data/jupiter';
+import saturn from './data/saturn';
+import uranus from './data/uranus';
+import neptune from './data/neptune';
 
 function App() {
   return (
@@ -16,28 +23,28 @@ function App() {
           <Redirect to={routes.mercury} />
         </Route>
         <Route path={routes.mercury}>
-          <Planet planet={data.planets[0]} />
+          <Planet planet={mercury} />
         </Route>
         <Route path={routes.venus}>
-          <Planet planet={data.planets[1]} />
+          <Planet planet={venus} />
         </Route>
         <Route path={routes.earth}>
-          <Planet planet={data.planets[2]} />
+          <Planet planet={earth} />
         </Route>
         <Route path={routes.mars}>
-          <Planet planet={data.planets[3]} />
+          <Planet planet={mars} />
         </Route>
         <Route path={routes.jupiter}>
-          <Planet planet={data.planets[4]} />
+          <Planet planet={jupiter} />
         </Route>
         <Route path={routes.saturn}>
-          <Planet planet={data.planets[5]} />
+          <Planet planet={saturn} />
         </Route>
         <Route path={routes.uranus}>
-          <Planet planet={data.planets[6]} />
+          <Planet planet={uranus} />
         </Route>
         <Route path={routes.neptune}>
-          <Planet planet={data.planets[7]} />
+          <Planet planet={neptune} />
         </Route>
         <Route path="*">
           <NotFoundPage />
