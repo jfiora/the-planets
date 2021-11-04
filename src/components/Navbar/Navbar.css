@@ -1,10 +1,17 @@
+/* BASE */
 .Navbar {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 6rem;
   padding: 0rem 8%;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* MOBILE AND TABLET */
+@media screen and (max-width: 1023px) {
+  .Navbar {
+    height: 6rem;
+  }
 }
