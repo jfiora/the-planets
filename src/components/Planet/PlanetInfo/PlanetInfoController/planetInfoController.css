@@ -1,7 +1,4 @@
-.planetInfoController{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30%;
-    height: 200px;
+.planetInfoController {
+  display: flex;
+  justify-content: space-around;
 }
