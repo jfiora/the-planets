@@ -1,0 +1,15 @@
+.planetImage {
+  display: flex;
+  justify-content: center;
+}
+
+.planetImage img {
+  width: 10rem;
+}
+
+/* MOBILE */
+@media screen and (max-width: 767px) {
+  .planetImage {
+    margin: 2rem 0 4rem 0;
+  }
+}
