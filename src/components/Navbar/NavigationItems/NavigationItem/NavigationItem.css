@@ -20,7 +20,7 @@
 }
 
 .NavigationItem .indicator.light-blue {
-  background-color: var(--blue-lighter);
+  background-color: var(--blue-light);
 }
 .NavigationItem .indicator.yellow {
   background-color: var(--yellow);
@@ -41,7 +41,7 @@
   background-color: var(--cyan);
 }
 .NavigationItem .indicator.blue {
-  background-color: var(--blue-light);
+  background-color: var(--blue);
 }
 
 /* MOBILE AND TABLET */
