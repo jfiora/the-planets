@@ -29,7 +29,7 @@
 /* DESKTOP */
 @media screen and (min-width: 1024px) {
   .PlanetInfo {
-    grid-template-columns: 5fr 3fr;
+    grid-template-columns: 2fr 1fr;
     margin-bottom: 2rem;
   }
 

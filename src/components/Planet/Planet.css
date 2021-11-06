@@ -1,6 +1,11 @@
+.Planet {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
 /* TABLET */
 @media screen and (min-width: 768px) {
   .Planet {
-    padding: 0 8%;
+    padding: 0 5%;
   }
 }
