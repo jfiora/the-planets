@@ -25,3 +25,31 @@
     grid-column-end: 3;
   }
 }
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  .PlanetInfo {
+    grid-template-columns: 5fr 3fr;
+    margin-bottom: 2rem;
+  }
+
+  .PlanetInfo .planetImage {
+    min-width: 100%;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    align-self: center;
+  }
+
+  .PlanetInfo .PlanetDescriptionWrapper {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .PlanetInfo .planetInfoController {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}

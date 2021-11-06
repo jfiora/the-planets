@@ -25,3 +25,10 @@
     transform: scale(0.5);
   }
 }
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  .planetImage img {
+    transform: scale(0.9);
+  }
+}
