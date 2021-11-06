@@ -1,0 +1,27 @@
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .PlanetInfo {
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    grid-row-gap: 3rem;
+    grid-column-gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .PlanetInfo .planetImage {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .PlanetInfo .PlanetDescriptionWrapper {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .PlanetInfo .planetInfoController {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}

@@ -5,6 +5,7 @@
   text-transform: uppercase;
   color: #fff;
   font-size: 12px;
+  font-family: var(--ff-primary);
   display: flex;
 }
 
@@ -12,6 +13,7 @@
   margin-right: 20px;
 }
 
+/* MOBILE */
 @media screen and (max-width: 767px) {
   .infoControllerButton {
     border: none;
@@ -56,12 +58,40 @@
   .infoControllerButton {
     letter-spacing: 2.6px;
     line-height: 25px;
+    padding: 0.6rem 1rem;
+    margin-top: 1rem;
   }
+
   .infoControllerButton:hover {
     background-color: rgba(216, 216, 216, 0.2);
   }
 
   .infoControllerButton .title--mobile {
     display: none;
+  }
+
+  .infoControllerButton.active.light-blue {
+    background-color: var(--blue-light);
+  }
+  .infoControllerButton.active.yellow {
+    background-color: var(--yellow);
+  }
+  .infoControllerButton.active.purple {
+    background-color: var(--purple);
+  }
+  .infoControllerButton.active.light-red {
+    background-color: var(--red-light);
+  }
+  .infoControllerButton.active.red {
+    background-color: var(--red);
+  }
+  .infoControllerButton.active.orange {
+    background-color: var(--orange);
+  }
+  .infoControllerButton.active.cyan {
+    background-color: var(--cyan);
+  }
+  .infoControllerButton.active.blue {
+    background-color: var(--blue);
   }
 }

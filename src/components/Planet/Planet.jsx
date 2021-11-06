@@ -1,13 +1,15 @@
-import PlanetInfo from "./PlanetInfo/PlanetInfo";
-import PlanetStats from "./PlanetStats/PlanetStats";
+import './Planet.css';
 
-const Planet = ({planet}) => {
-    return (
-        <>
-            <PlanetInfo planet={planet} />
-            <PlanetStats stats={planet.stats} /> 
-        </>
-    );
-}
+import PlanetInfo from './PlanetInfo/PlanetInfo';
+import PlanetStats from './PlanetStats/PlanetStats';
+
+const Planet = ({ planet }) => {
+  return (
+    <div className="Planet">
+      <PlanetInfo planet={planet} />
+      <PlanetStats stats={planet.stats} />
+    </div>
+  );
+};
 
 export default Planet;

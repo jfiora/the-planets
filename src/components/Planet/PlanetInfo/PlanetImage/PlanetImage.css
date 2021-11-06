@@ -1,15 +1,27 @@
 .planetImage {
   display: flex;
   justify-content: center;
-}
-
-.planetImage img {
-  width: 10rem;
+  align-items: center;
 }
 
 /* MOBILE */
 @media screen and (max-width: 767px) {
   .planetImage {
     margin: 2rem 0 4rem 0;
+  }
+
+  .planetImage img {
+    width: 10rem;
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .planetImage {
+    max-height: 20rem;
+  }
+
+  .planetImage img {
+    transform: scale(0.5);
   }
 }
