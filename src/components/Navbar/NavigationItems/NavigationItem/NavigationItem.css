@@ -84,6 +84,7 @@
 @media screen and (min-width: 1024px) {
   .NavigationItem .navlink {
     padding: 3rem 1.5rem;
+    font-size: var(--fs-xs);
   }
 
   .NavigationItem:hover .indicator {
