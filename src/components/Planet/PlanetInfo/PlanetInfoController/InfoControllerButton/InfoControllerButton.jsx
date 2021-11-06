@@ -22,9 +22,7 @@ const InfoControllerButton = ({
 
   return (
     <button
-      className={`infoControllerButton ${planetColor} ${
-        isSelected ? 'active' : ''
-      }`}
+      className={`infoControllerButton ${planetColor} ${ isSelected ? 'active' : '' }`}
       onClick={() => setCurrentInfoPlanet(number)}>
       <span>{number}</span>
       <p className="title--mobile">{mobileTitle}</p>
