@@ -1,6 +1,14 @@
 .PlanetBio {
-    color: black;
-    font-family: 'Spartan', sans-serif;
-    font-size: 14px;
-    margin: 0px 0px 40px;
+  color: var(--white);
+  font-family: 'Spartan', sans-serif;
+  font-size: 14px;
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+
+/* MOBILE */
+@media screen and (max-width: 767px) {
+  .PlanetBio {
+    padding: 0 5%;
+  }
 }

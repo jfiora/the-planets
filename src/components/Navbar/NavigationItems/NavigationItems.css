@@ -20,9 +20,9 @@
     top: 6rem;
     left: 0;
     width: 100%;
-    height: calc(100vh - 6rem);
+    height: 100vh;
     padding: 1rem 8%;
-
+    z-index: 100;
     background-color: var(--blue-dark);
   }
 

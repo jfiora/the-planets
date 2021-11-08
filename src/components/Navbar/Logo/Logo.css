@@ -3,3 +3,10 @@
   font-size: var(--fs-lg);
   color: #fff;
 }
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  .Logo {
+    font-size: 2rem;
+  }
+}

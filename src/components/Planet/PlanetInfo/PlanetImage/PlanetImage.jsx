@@ -1,4 +1,6 @@
-const PlanetImage = ({image}) => {
+import './PlanetImage.css';
+
+const PlanetImage = ({ image }) => {
   return (
     <div className="planetImage">
       <img alt="planet" src={image} />

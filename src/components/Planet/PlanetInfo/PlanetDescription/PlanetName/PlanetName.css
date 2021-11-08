@@ -1,7 +1,8 @@
 .PlanetName {
-    font-family: 'Antonio', sans-serif;
-    text-transform: uppercase;
-    font-size: 5rem;
-    line-height: 100%;
-    margin-bottom: 40px;
+  color: var(--white);
+  font-family: var(--ff-secondary);
+  text-transform: uppercase;
+  font-size: var(--fs-xl);
+  line-height: 100%;
+  margin-bottom: 40px;
 }

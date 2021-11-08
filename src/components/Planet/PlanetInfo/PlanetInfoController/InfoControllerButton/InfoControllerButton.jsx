@@ -5,17 +5,28 @@ const InfoControllerButton = ({
   setCurrentInfoPlanet,
   isSelected,
 }) => {
-  const number = information.number;
-  const title = information.title;
-  const color = information.color;
+  const { number, title, planetColor } = information;
+
+  let mobileTitle = '';
+  switch (title) {
+    case 'SURFACE GEOLOGY':
+      mobileTitle = 'surface';
+      break;
+    case 'INTERNAL STRUCTURE':
+      mobileTitle = 'structure';
+      break;
+    default:
+      mobileTitle = 'overview';
+      break;
+  }
 
   return (
     <button
-      className="infoControllerButton"
-      onClick={() => setCurrentInfoPlanet(number)}
-      style={{ backgroundColor: isSelected ? color : '' }}>
+      className={`infoControllerButton ${planetColor} ${ isSelected ? 'active' : '' }`}
+      onClick={() => setCurrentInfoPlanet(number)}>
       <span>{number}</span>
-      <p>{title}</p>
+      <p className="title--mobile">{mobileTitle}</p>
+      <p className="title--desktop">{title}</p>
     </button>
   );
 };

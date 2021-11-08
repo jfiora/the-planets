@@ -1,7 +1,19 @@
-.planetInfoController{
-    display: flex;
+.planetInfoController {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* MOBILE */
+@media screen and (max-width: 767px) {
+  .planetInfoController {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .planetInfoController {
     flex-direction: column;
-    justify-content: space-between;
-    width: 30%;
-    height: 200px;
+    justify-content: center;
+  }
 }

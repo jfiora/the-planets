@@ -1,4 +1,6 @@
-.PlanetDescription {
-    display: flex;
-    flex-direction: column;
+/* MOBILE */
+@media screen and (max-width: 767px) {
+  .PlanetDescriptionWrapper {
+    text-align: center;
+  }
 }

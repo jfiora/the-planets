@@ -8,7 +8,6 @@
 .NavigationItem .navlink:active,
 .NavigationItem .navlink:visited {
   display: block;
-
   font-family: var(--ff-primary);
   font-size: var(--fs-sm);
   text-decoration: none;
@@ -20,7 +19,7 @@
 }
 
 .NavigationItem .indicator.light-blue {
-  background-color: var(--blue-lighter);
+  background-color: var(--blue-light);
 }
 .NavigationItem .indicator.yellow {
   background-color: var(--yellow);
@@ -41,7 +40,7 @@
   background-color: var(--cyan);
 }
 .NavigationItem .indicator.blue {
-  background-color: var(--blue-light);
+  background-color: var(--blue);
 }
 
 /* MOBILE AND TABLET */
@@ -82,8 +81,11 @@
 
 /* DESKTOP */
 @media screen and (min-width: 1024px) {
-  .NavigationItem .navlink {
+  .NavigationItem .navlink,
+  .NavigationItem .navlink:active,
+  .NavigationItem .navlink:visited {
     padding: 3rem 1.5rem;
+    font-size: var(--fs-xs);
   }
 
   .NavigationItem:hover .indicator {

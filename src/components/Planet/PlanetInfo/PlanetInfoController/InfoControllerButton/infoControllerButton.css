@@ -1,19 +1,97 @@
 .infoControllerButton {
   outline: none;
   border: 1px solid rgba(216, 216, 216, 0.2);
+  background-color: transparent;
   text-transform: uppercase;
   color: #fff;
-  letter-spacing: 2.6px;
-  line-height: 25px;
-  padding: 10px 20px;
   font-size: 12px;
+  font-family: var(--ff-primary);
   display: flex;
-}
-
-.infoControllerButton:hover {
-  background-color: rgba(216, 216, 216, 0.2);
 }
 
 .infoControllerButton span {
   margin-right: 20px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 767px) {
+  .infoControllerButton {
+    border: none;
+    padding: 1.5rem 1rem;
+  }
+
+  .infoControllerButton.active.light-blue {
+    border-bottom: 4px solid var(--blue-light);
+  }
+  .infoControllerButton.active.yellow {
+    border-bottom: 4px solid var(--yellow);
+  }
+  .infoControllerButton.active.purple {
+    border-bottom: 4px solid var(--purple);
+  }
+  .infoControllerButton.active.light-red {
+    border-bottom: 4px solid var(--red-light);
+  }
+  .infoControllerButton.active.red {
+    border-bottom: 4px solid var(--red);
+  }
+  .infoControllerButton.active.orange {
+    border-bottom: 4px solid var(--orange);
+  }
+  .infoControllerButton.active.cyan {
+    border-bottom: 4px solid var(--cyan);
+  }
+  .infoControllerButton.active.blue {
+    border-bottom: 4px solid var(--blue);
+  }
+
+  .infoControllerButton .title--desktop {
+    display: none;
+  }
+
+  .infoControllerButton span {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .infoControllerButton {
+    letter-spacing: 2.6px;
+    line-height: 25px;
+    padding: 0.6rem 1rem;
+    margin-top: 1rem;
+  }
+
+  .infoControllerButton:hover {
+    background-color: rgba(216, 216, 216, 0.2);
+  }
+
+  .infoControllerButton .title--mobile {
+    display: none;
+  }
+
+  .infoControllerButton.active.light-blue {
+    background-color: var(--blue-light);
+  }
+  .infoControllerButton.active.yellow {
+    background-color: var(--yellow);
+  }
+  .infoControllerButton.active.purple {
+    background-color: var(--purple);
+  }
+  .infoControllerButton.active.light-red {
+    background-color: var(--red-light);
+  }
+  .infoControllerButton.active.red {
+    background-color: var(--red);
+  }
+  .infoControllerButton.active.orange {
+    background-color: var(--orange);
+  }
+  .infoControllerButton.active.cyan {
+    background-color: var(--cyan);
+  }
+  .infoControllerButton.active.blue {
+    background-color: var(--blue);
+  }
 }
